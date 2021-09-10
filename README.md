@@ -27,36 +27,49 @@ We want you to do three things:
 
 1. Style the page
 2. Create it so that you can navigate to a company's page
-3. Allow user to set alarms
-4. When alarms are triggered notify user through webapp
+3. Allow user to set alarms which are triggered
 
 ## Exercise 1 - Style the page
 
 We want you to make the page look like this:
 
-![Exercise 1 completed](exercise_1_completed.png)
+* Background: #000000
+* Gray: #d3d3d3
+* Blue: #0a5dff
+* Border radius: `16px`
+* Font sizes:
+    * Company name: `20px`
+    * Company ticker: `12px`
+    * Stock price: `24px`
+* Margins between header and companies: `16px`
+* Padding in company item: `8px` on y-axis and `16px` on x-axis.
+
+![Exercise 1 done](./images/exercise_1_done.png)
 
 ## Exercise 2 - Navigate to a company's page
 
 When a user clicks on of the companies they should be navigated to a page specifically for the company. It should look like this:
 
-![Exercise 2 completed](exercise_2_completed.png)
+* Width of elements container `512px`
+* Margin between title and price: `8px`
+* Margin between price and 'Alarms': `40px`
+* Button padding: `16px` on y-axis and `32px` on x-axis
+* Button border radius: `32px`
+
+![Exercise 2 done](images/exercise_2_done.png)
 
 ## Exercise 3 - Allow users to set alarms
 
-Allow users to set an alarm. It should look like this:
+Allow users to set either an upper limit or lower limit alarm and visually show whether it's active. It should look like this:
 
-![Exercise 3 completed](exercise_3_completed.gif)
+You should implement the trigger alarm logic in the **backend** in `functions/src/checkAlarms.ts`.
 
-## Exercise 4 - Notify users in webapp when alarms are triggered
-
-Give the user a [web notification](https://developer.mozilla.org/en-US/docs/Web/API/notification) when an alarm is triggered while the web app is open or if it has been triggered while the web app has been closed. It should look like this:
-
-![Exercise 4 completed](exercise_4_completed.gif)
+![Exercise 3 done](images/exercise_3_done.gif)
 
 ## Notes
 
 * Don't worry about users and authenticating. Just assume there is, and will ever be, just 1 user, which is you.
+* There's a bug right now where during exercise 3 the reloading of the backend doesn't work. As in; changes in `checkAlarms` don't take effect. You're going to have to manually restart every time. I'm sorry.
 
 # Submitting
 
