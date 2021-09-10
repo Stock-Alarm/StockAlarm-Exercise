@@ -7,8 +7,6 @@ import { database } from "../../firebase";
 function App() {
   const [companiesObj, isLoading] = useObjectVal(database.ref("/company"));
 
-  console.log(companiesObj);
-
   if (isLoading) {
     return <p>Loading...</p>;
   }
