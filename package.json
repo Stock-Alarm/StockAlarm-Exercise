@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start:frontend": "wait-on http://localhost:5001/exercise-tarik/us-central1/helloWorld && cd frontend && npm start",
+    "start:frontend": "wait-on http://localhost:5001/exercise-tarik/us-central1/alive && cd frontend && npm start",
     "build:backend": "cd functions && npm run build:watched",
-    "start:backend": "npm run build:backend & firebase emulators:start",
-    "start": "npm run start:frontend & npm run start:backend"
+    "start:backend": "npm run build:backend & firebase emulators:start --import emulator_data",
+    "start": "npm run start:frontend & npm run start:backend",
+    "emulators:export": "rm -rf emulator_data && firebase emulators:export emulator_data"
   },
   "author": "",
   "license": "ISC",

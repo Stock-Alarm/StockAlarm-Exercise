@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useObjectVal } from "react-firebase-hooks/database";
+import "./App.css";
+import { Company } from "./Company";
+import { CompanyItem } from "./components/CompanyItem";
+import { database } from "./firebase";
 
 function App() {
+  const [companiesObj, isLoading] = useObjectVal(database.ref("/company"));
+
+  console.log(companiesObj);
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
+
+  const companies = Object.values(
+    (companiesObj as any as Record<string, Company>) || {}
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {companies.map((company) => (
+        <CompanyItem company={company} key={company.ticker} />
+      ))}
     </div>
   );
 }
