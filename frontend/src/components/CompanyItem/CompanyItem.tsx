@@ -1,5 +1,5 @@
 import React from "react";
-import { Company } from "../Company";
+import { Company } from "../../Company";
 
 interface IProps {
   company: Company;

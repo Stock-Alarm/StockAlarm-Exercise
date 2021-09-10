@@ -1,8 +1,8 @@
 import { useObjectVal } from "react-firebase-hooks/database";
 import "./App.css";
-import { Company } from "./Company";
-import { CompanyItem } from "./components/CompanyItem";
-import { database } from "./firebase";
+import { Company } from "../../Company";
+import { CompanyItem } from "../CompanyItem/CompanyItem";
+import { database } from "../../firebase";
 
 function App() {
   const [companiesObj, isLoading] = useObjectVal(database.ref("/company"));
