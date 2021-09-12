@@ -1,0 +1,43 @@
+.company-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.company-page__container {
+    width: 512px;
+}
+
+.company-page__name {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.company-page__ticker {
+    font-size: 22px;
+    color: #AAAAAA;
+}
+
+.company-page__stock-price {
+    font-size: 22px;
+}
+
+.company-page__alarm-text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.company-page__alarm-button {
+    padding: 16px 32px;
+    background-color: #0A5DFF;
+    border-radius: 32px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.company-page__alarm-button:hover {
+    background-color: #0446fa;
+}
