@@ -2,13 +2,14 @@
   "name": "functions",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
-    "build:watched": "nodemon --exec 'tsc' -e js,ts,jsx,tsx --watch src"
+    "build:watched": "nodemon --exec tsc -e js,ts,jsx,tsx --watch src"
   },
   "engines": {
     "node": "14"
   },
   "main": "lib/index.js",
   "dependencies": {
+    "@firebase/app-types": "^0.7.0",
     "firebase-admin": "^9.3.0",
     "firebase-functions": "^3.14.1"
   },

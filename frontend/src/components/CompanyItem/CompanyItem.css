@@ -1,0 +1,51 @@
+.company-item {
+    background-color: #0A5DFF;
+    border-radius: 16px;
+    padding: 16px 8px;
+    margin-top: 16px;
+    width: 80%
+}
+
+.company-item__name {
+    font-size: 20px;
+}
+
+.company-item__ticker {
+    font-size: 12px;
+}
+
+.company-item__stock-price {
+    font-size: 24px;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-grey {
+    color: #D3D3D3;
+}
+
+p {
+    margin: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.p-5 {
+    padding-left: 5px;
+}
+
+.align-self-center {
+    align-self: center;
+}

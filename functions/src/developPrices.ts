@@ -14,7 +14,7 @@ const alterAllPrices = async () => {
       const percentChange = (10 - Math.random() * 20) / 100; // Between -0.1 and 0.1
       await database
         .ref(`company/${company.ticker}/stockPrice`)
-        .set(company.stockPrice * (1 + percentChange));
+        .set((company.stockPrice * (1 + percentChange)).toFixed(2));
     })
   );
 
