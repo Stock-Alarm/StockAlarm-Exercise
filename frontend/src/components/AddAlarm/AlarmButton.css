@@ -1,0 +1,14 @@
+.alarm-button__button {
+    padding: 16px 32px;
+    background-color: #0A5DFF;
+    border-radius: 32px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.alarm-button__button:hover {
+    background-color: #0446fa;
+}

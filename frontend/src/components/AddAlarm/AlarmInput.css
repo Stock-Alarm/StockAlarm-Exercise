@@ -1,0 +1,19 @@
+.alarm-input__button {
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 50%;
+    color: white;
+    background-color: #0A5DFF;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+}
+
+.alarm-input__button:hover {
+    background-color: #0446fa;
+}

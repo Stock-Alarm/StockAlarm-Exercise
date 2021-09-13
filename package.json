@@ -1,18 +1,18 @@
 {
-  "name": "stockalarm-exercise",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "start:frontend": "cd frontend && npm start",
-    "build:backend": "cd functions && npm run build:watched",
-    "start:backend": "npm run build:backend & firebase emulators:start --import emulator_data",
-    "start": "npm run start:frontend & npm run start:backend",
-    "emulators:export": "rm -rf emulator_data && firebase emulators:export emulator_data"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/react": "^17.0.20",
-    "wait-on": "^6.0.0"
-  }
+    "name": "stockalarm-exercise",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start:frontend": "cd frontend && npm start",
+        "build:backend": "cd functions && npm run build:watched",
+        "start:backend": "npm run build:backend & firebase emulators:start --import emulator_data",
+        "start": "npm run start:frontend & npm run start:backend",
+        "emulators:export": "rm -rf emulator_data && firebase emulators:export emulator_data"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/react": "^17.0.20",
+        "wait-on": "^6.0.0"
+    }
 }

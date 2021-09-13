@@ -1,0 +1,10 @@
+.alarm-display {
+    width: 100%
+}
+
+.alarm-display__emoji {
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 5px;
+}
